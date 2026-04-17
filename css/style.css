@@ -1696,6 +1696,38 @@ a { text-decoration: none; }
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    /* --- MOBILE FOOTER & NEWSLETTER FIX --- */
+  .footer-newsletter {
+    align-items: center;
+    text-align: center;
+  }
+  .newsletter-block {
+    width: 100%;
+  }
+  .newsletter-form {
+    flex-direction: column;
+    background: transparent;
+    padding: 0;
+    gap: 0.8rem;
+    width: 100%;
+  }
+  .newsletter-form input {
+    width: 100%;
+    background-color: var(--color--white);
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    text-align: center; /* Centers the placeholder text nicely */
+  }
+  .btn-subscribe {
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .footer-copy p {
+    white-space: normal;
+    word-wrap: break-word;
   }
 
   /* Mobile menu dropdown panel */
