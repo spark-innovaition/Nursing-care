@@ -1662,9 +1662,13 @@ a { text-decoration: none; }
   .about-grid { grid-template-columns: 1fr; gap: 4rem; }
   .about-content { padding: 0 2rem; text-align: center; }
   .about-content .section-tag { margin-inline: auto; }
-  
+
   .split-layout { grid-template-columns: 1fr; gap: 4rem; }
   .team-container, .testimonial-container { padding: 5rem 4rem; }
+
+  .appointment-section { padding: 4rem 3rem; }
+  .appointment-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .how-we-work-content { padding-left: 0; }
 
   .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .footer-newsletter { border-bottom-right-radius: 40px; }
@@ -1710,9 +1714,32 @@ a { text-decoration: none; }
   .team-container, .testimonial-container { padding: 3rem 1.5rem; }
   .team-mask-br, .test-mask-tl { display: none; } /* Hide cutouts on mobile */
   
-  .stats-section { flex-direction: column; gap: 3rem; text-align: center; border-top: none; }
-  .stat-block h3 { font-size: 42px; }
+  .stats-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: none;
+  }
+  .stat-block h3 { font-size: 40px; }
+  .stat-block p { font-size: 14px; }
   .quote { max-width: 100%; }
+
+  .appointment-section {
+    padding: 3rem 1.5rem;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+  }
+  .appt-mask-tl, .appt-mask-br { display: none; }
+  .appointment-grid { gap: 2.5rem; }
+  .appointment-card { padding: 2rem 1.5rem; }
+  .card-title { font-size: 24px; margin-bottom: 1.5rem; }
+  .form-row { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group.full-width { margin-bottom: 1rem; }
+  .work-title { font-size: 32px; margin-bottom: 2rem; }
+  .work-steps { padding-left: 1.5rem; gap: 1.75rem; margin-left: 0; }
+  .work-step h3 { font-size: 20px; }
 
   .blog-entry { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .blog-entry-title { font-size: 22px; }
