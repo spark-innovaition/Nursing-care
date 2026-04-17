@@ -66,6 +66,8 @@ a { text-decoration: none; }
   background-color: var(--color--white);
   padding: 1.5rem 0;
   width: 100%;
+  position: relative;
+  z-index: 50;
 }
 .header-container {
   display: flex;
@@ -136,6 +138,7 @@ a { text-decoration: none; }
   object-fit: cover;
   z-index: 1;
 }
+.hero-video-mobile { display: none; }
 .hero-overlay {
   position: absolute;
   top: 0; left: 0;
@@ -615,6 +618,7 @@ a { text-decoration: none; }
   border-radius: 40px;
   padding: 5rem 4rem; /* Much larger boxes */
   position: relative;
+  min-width: 0;
 }
 
 /* Left: Team Specifics */
@@ -1680,8 +1684,58 @@ a { text-decoration: none; }
   .team-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
 }
 @media (max-width: 768px) {
+  .hero-video-desktop { display: none; }
+  .hero-video-mobile { display: block; }
+
+  .header-container { justify-content: center; position: relative; }
+  .brand-logo { margin: 0 auto; }
   .main-nav, .site-header .btn-header { display: none; }
-  .mobile-menu-toggle { display: flex; }
+  .mobile-menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Mobile menu dropdown panel */
+  .site-header.menu-open .main-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color--white);
+    padding: 1rem 1.5rem 1.5rem;
+    box-shadow: 0 10px 24px rgba(0, 53, 136, 0.08);
+    border-top: 1px solid #eef2f7;
+  }
+  .site-header.menu-open .main-nav .nav-links {
+    flex-direction: column;
+    gap: 0;
+  }
+  .site-header.menu-open .main-nav .nav-links li {
+    border-bottom: 1px solid #f0f2f7;
+  }
+  .site-header.menu-open .main-nav .nav-links li:last-child { border-bottom: none; }
+  .site-header.menu-open .main-nav .nav-links a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 16px;
+    color: var(--color--primary-2);
+  }
+  .site-header.menu-open .main-nav .nav-links a.active { color: var(--color--primary-1); }
+
+  /* Hamburger → X animation when open */
+  .site-header.menu-open .mobile-menu-toggle span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .site-header.menu-open .mobile-menu-toggle span:nth-child(2) { opacity: 0; }
+  .site-header.menu-open .mobile-menu-toggle span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .mobile-menu-toggle span { transition: transform 0.25s ease, opacity 0.2s ease; }
+
   .hero-title { font-size: 42px; }
   .hero-box { padding: 3rem 1.5rem; }
   .hero-features-wrapper { width: 100%; border-top-right-radius: 0; }

@@ -9,11 +9,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 2. Mobile Menu Toggle Logic
   const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const siteHeader = document.querySelector('.site-header');
   const mainNav = document.querySelector('.main-nav');
-  
-  if(menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      alert("Mobile menu clicked! We can build the expanded mobile menu styles if needed.");
+
+  if (menuToggle && siteHeader) {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = siteHeader.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close Menu' : 'Open Menu');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    if (mainNav) {
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          siteHeader.classList.remove('menu-open');
+          menuToggle.setAttribute('aria-label', 'Open Menu');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+      if (siteHeader.classList.contains('menu-open') && !siteHeader.contains(e.target)) {
+        siteHeader.classList.remove('menu-open');
+        menuToggle.setAttribute('aria-label', 'Open Menu');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
