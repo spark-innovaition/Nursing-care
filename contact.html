@@ -4,55 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact KindNurse Care@Home at 9923 51 Avenue, Edmonton. Reach us by phone, email, or our online contact form to discuss care options.">
-    <title>Contact Us | KindNurse Care@Home</title>
+    <title>Contact | KindNurse Care@Home</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="site-header">
-        <nav class="nav-container">
-            <a href="index.html" class="logo">KindNurse Care@Home</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">What We Provide</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+      <div class="container header-container">
+        <a href="index.html" class="brand-logo">
+          <img src="images/Header logo.webp" alt="KindNurse Care@Home">
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
         </nav>
+        <a href="contact.html" class="btn btn-header">Make an enquiry</a>
+
+        <button class="mobile-menu-toggle" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
-    <main>
-        <section class="page-hero">
-            <!-- Contact page intro -->
-        </section>
+    <main class="container">
 
-        <section class="contact-layout">
-            <div class="contact-info">
-                <!-- Address: 9923 51 Avenue, Edmonton -->
-                <!-- Phone (tel: link), Email (mailto: link), Hours -->
+      <section class="contact-hero">
+        <div class="contact-hero-grid">
+          <div class="contact-hero-left">
+            <h1 class="contact-hero-title reveal">Connect with <span class="text-primary">customer</span> support</h1>
+          </div>
+          <div class="contact-hero-right reveal" data-delay="1">
+            <p class="contact-hero-desc">Our dedicated customer support team is here to assist you with any questions, concerns, or feedback you may have.</p>
+            <div class="contact-socials">
+              <a href="#" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="X">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.76 3.76 0 0 1 3.38-1.86c3.61 0 4.28 2.38 4.28 5.47v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="contact-form-wrapper">
-                <form class="contact-form" action="#" method="post">
-                    <!-- Name, Email, Phone, Service, Message, Submit -->
-                </form>
+      <section class="contact-cards-section">
+        <div class="contact-cards-grid">
+
+          <div class="contact-card reveal" data-delay="1">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
-        </section>
+            <p class="contact-card-label">Talk to our support experts</p>
+            <a class="contact-card-link" href="tel:+15551234567">+1 (555) 123-4567</a>
+          </div>
 
-        <section class="map-section">
-            <!-- Embedded map -->
-        </section>
+          <div class="contact-card reveal" data-delay="2">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <p class="contact-card-label">Send your queries</p>
+            <a class="contact-card-link" href="mailto:hello@nursingcare.ca">hello@nursingcare.ca</a>
+          </div>
+
+          <div class="contact-card reveal" data-delay="3">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 7-8 12-8 12s-8-5-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <p class="contact-card-label">Where to find us</p>
+            <p class="contact-card-text">9923 51 Avenue, Edmonton, AB</p>
+          </div>
+
+          <div class="contact-card reveal" data-delay="4">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <p class="contact-card-label">Service hours</p>
+            <p class="contact-card-text">Mon – Sat : 9.00 – 5.00</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <div class="contact-form-grid">
+
+          <div class="contact-form-image reveal reveal-left">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop" alt="Customer support nurse at desk">
+          </div>
+
+          <div class="contact-form-panel reveal reveal-right">
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="contact-form-group">
+                <label for="phone">Phone no</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="contact-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="contact-form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-contact-submit">Submit</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact-map-section reveal reveal-scale">
+        <iframe
+          src="https://www.google.com/maps?q=9923+51+Avenue,+Edmonton,+AB&output=embed"
+          width="100%" height="450" style="border:0;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="KindNurse Care@Home location">
+        </iframe>
+      </section>
+
     </main>
 
     <footer class="site-footer">
-        <div class="footer-grid">
-            <div class="footer-about"></div>
-            <div class="footer-links"></div>
-            <div class="footer-contact"></div>
+      <div class="container footer-grid">
+
+        <div class="footer-newsletter">
+          <div class="footer-mask-br"></div>
+
+          <a href="index.html" class="brand-logo footer-logo">
+            <img src="images/Footer logo.png" alt="KindNurse Care@Home">
+          </a>
+
+          <div class="newsletter-block">
+            <h3 class="newsletter-title">Stay updated with our newsletter</h3>
+            <form class="newsletter-form" action="#" method="post">
+              <input type="email" placeholder="Enter your email address" required>
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="X">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.76 3.76 0 0 1 3.38-1.86c3.61 0 4.28 2.38 4.28 5.47v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <p class="footer-copy">&copy; 2026 KindNurse Care@Home. All rights reserved.</p>
+
+        <div class="footer-links-panel">
+          <div class="footer-mask-tr"></div>
+
+          <div class="footer-links-grid">
+            <div class="footer-col">
+              <h4 class="footer-col-title">Pages</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4 class="footer-col-title">Quick Links</h4>
+              <ul>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#appointment">Book appointment</a></li>
+                <li><a href="index.html#why-choose">Why choose us</a></li>
+                <li><a href="index.html#services">Our services</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col footer-col-contact">
+              <h4 class="footer-col-title">Contact information</h4>
+              <div class="contact-item">
+                <span class="contact-label">Address</span>
+                <p>9923 51 Avenue, Edmonton</p>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:hello@nursingcare.ca">hello@nursingcare.ca</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copy">
+            <p>&copy; 2026 KindNurse Care@Home. All rights reserved.</p>
+          </div>
+        </div>
+
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
