@@ -15,19 +15,19 @@
 
     <header class="site-header">
       <div class="container header-container">
-        <a href="/" class="brand-logo">
+        <a href="index.html" class="brand-logo">
           <span class="logo-icon">✚</span>
           <span class="logo-text">Nursing Care</span>
         </a>
         <nav class="main-nav">
           <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#pages">Pages ⌄</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <a href="#contact" class="btn btn-header">Make an enquiry</a>
+        <a href="contact.html" class="btn btn-header">Make an enquiry</a>
         
         <button class="mobile-menu-toggle" aria-label="Open Menu">
           <span></span><span></span><span></span>
@@ -38,6 +38,13 @@
     <main class="container">
       
       <section class="hero-box animate-on-load" id="home">
+        
+        <video class="hero-video-bg" autoplay loop muted playsinline>
+          <source src="videos/Hero section - video.webm" type="video/webm">
+        </video>
+        
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
           <div class="hero-tag">Compassionate home nursing care</div>
           <h1 class="hero-title">Bringing heartfelt care to your doorstep</h1>
@@ -68,36 +75,36 @@
         </div>
         
         <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon icon-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5A7.5 7.5 0 0 1 5.2 7.7L16.3 18.8a7.5 7.5 0 0 1-5.8 1.7Z"/><path d="m18.8 16.3-5.8-5.8-5.3 5.3 5.8 5.8 5.3-5.3Z"/><path d="m13 10.5 5.8-5.8a7.5 7.5 0 0 0-10.6 0Z"/></svg>
+          <div class="service-card card-blue">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
             </div>
             <h3 class="service-title">Medication management</h3>
             <p class="service-desc">We offer expert medication management services, including medication reminders, administration, and monitoring.</p>
             <a href="#read-more" class="service-link">Read more ↗</a>
           </div>
           
-          <div class="service-card">
-            <div class="service-icon icon-green">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <div class="service-card card-green">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 10V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/><path d="M8 18a6 6 0 0 0 12 0v-6"/><circle cx="20" cy="10" r="2"/></svg>
             </div>
             <h3 class="service-title">Skilled nursing care</h3>
             <p class="service-desc">Skilled nursing care delivered by licensed medical professionals in a variety of settings, including hospitals, and rehabilitation centers.</p>
             <a href="#read-more" class="service-link">Read more ↗</a>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon icon-lightblue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <div class="service-card card-cyan">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5v4"/><path d="M10 7h4"/></svg>
             </div>
             <h3 class="service-title">Chronic disease management</h3>
             <p class="service-desc">Our chronic disease management program offers personalized solutions to support individuals.</p>
             <a href="#read-more" class="service-link">Read more ↗</a>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon icon-purple">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div class="service-card card-purple">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
             </div>
             <h3 class="service-title">Rehabilitation support</h3>
             <p class="service-desc">Our rehabilitation support program is dedicated to helping individuals regain independence and rebuild strength after illness.</p>
@@ -106,7 +113,437 @@
         </div>
       </section>
 
+      <section class="why-choose-section" id="why-choose">
+        <div class="why-choose-grid">
+          
+          <div class="why-content">
+            <h2 class="section-title">Why choose <span class="text-primary">Nursing Care</span></h2>
+            
+            <div class="accordion-container">
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-title">Experienced caregivers</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Our team consists of highly skilled nurses with years of experience in home healthcare.</p>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-title">Compassionate approach</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Compassion is important in nursing because it builds trust between patients and healthcare providers, improves patient experiences, and can lead to better health outcomes.</p>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-title">Personalized care plans</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Personalized care plans are tailored healthcare strategies designed to meet the unique needs and preferences of individual patients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1000&auto=format&fit=crop" alt="Nurse caring for elderly man" class="why-image">
+            
+            <a href="#play-video" class="play-btn" aria-label="Play Video">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M5 3L19 12L5 21V3Z"/></svg>
+            </a>
+
+            <div class="why-stats-card">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div class="stat-text">
+                  <h4>24/7 availability</h4>
+                  <p>For your peace of mind</p>
+                </div>
+              </div>
+              
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/></svg>
+                </div>
+                <div class="stat-text">
+                  <h4>Professional expertise</h4>
+                  <p>Specialized skills in a profession</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-box">
+          <div class="cta-mask-tl"></div>
+          <div class="cta-mask-br"></div>
+          
+          <h2 class="cta-title">Join our community of care</h2>
+          <p class="cta-desc">At Nursing Care, we're here to provide compassionate and personalized care to you or your loved ones.</p>
+          <a href="#get-started" class="btn btn-secondary">Get started</a>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-grid">
+          
+          <div class="about-images">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop" alt="Smiling Nurse" class="img-left">
+            <div class="img-right-wrapper">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop" alt="Elderly patient with caregiver" class="img-right">
+              
+              <div class="experience-badge">
+                <div class="badge-center">10+</div>
+                <svg viewBox="0 0 100 100" class="rotating-text">
+                  <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                  <text>
+                    <textPath href="#circlePath" startOffset="0%" class="badge-text">
+                      YEARS OF EXPERIENCE • YEARS OF EXPERIENCE • 
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-tag tag-cyan">Who we are</div>
+            <h2 class="section-title">About <span class="text-primary">Nursing Care</span></h2>
+            <p class="about-desc">We are dedicated to delivering exceptional healthcare services with compassion and expertise. With a commitment to patient-centered care, our team of healthcare professionals strives to provide comprehensive medical treatments tailored to individual needs.</p>
+            <a href="#learn-more" class="btn btn-header">Learn more</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="team-testimonial-section">
+        <div class="split-layout">
+          
+          <div class="team-container">
+            <div class="team-mask-br"></div>
+
+            <div class="team-header">
+              <h2 class="section-title">Meet our dedicated <span class="text-primary-light">team</span></h2>
+            </div>
+            
+            <div class="team-marquee-wrapper">
+              <div class="team-marquee-track">
+                <div class="team-member">
+                  <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Emma Johnson">
+                  <h4>Emma Johnson, RN</h4>
+                  <p>Senior Nurse</p>
+                </div>
+                <div class="team-member">
+                  <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=300&auto=format&fit=crop" alt="David Miller">
+                  <h4>David Miller, LPN</h4>
+                  <p>Care Coordinator</p>
+                </div>
+                <div class="team-member">
+                  <img src="https://images.unsplash.com/photo-1594824436998-dd40e4f29d41?q=80&w=300&auto=format&fit=crop" alt="Olivia Martinez">
+                  <h4>Olivia Martinez, RN</h4>
+                  <p>Palliative Care</p>
+                </div>
+                <div class="team-member">
+                  <img src="https://images.unsplash.com/photo-1537368910025-7028a4ce1766?q=80&w=300&auto=format&fit=crop" alt="Sophia Brown">
+                  <h4>Sophia Brown, CNA</h4>
+                  <p>Nursing Assistant</p>
+                </div>
+                
+                <div class="team-member">
+                  <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Emma Johnson">
+                  <h4>Emma Johnson, RN</h4>
+                  <p>Senior Nurse</p>
+                </div>
+                <div class="team-member">
+                  <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=300&auto=format&fit=crop" alt="David Miller">
+                  <h4>David Miller, LPN</h4>
+                  <p>Care Coordinator</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#all-nurses" class="btn btn-green-small">View all nurses</a>
+          </div>
+
+          <div class="testimonial-container">
+            <div class="test-mask-tl"></div>
+
+            <h2 class="section-title">What our clients say</h2>
+            
+            <div class="stars">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#266afb"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#266afb"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#266afb"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#266afb"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#266afb"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            
+            <p class="quote">The environment created by the Nursing Care team was one of healing and positivity. Their holistic approach made a significant difference in my recovery.</p>
+            <p class="author">Louis Ferguson</p>
+
+            <div class="avatar-row">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop"
+                   alt="Sarah Mitchell" class="avatar"
+                   data-quote="The team's care and attention exceeded our expectations. Mom is happier and healthier than she's been in years."
+                   data-author="Sarah Mitchell">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop"
+                   alt="James Holloway" class="avatar"
+                   data-quote="Professional, reliable, and genuinely caring. Nursing Care has been a blessing for our family during a difficult time."
+                   data-author="James Holloway">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop"
+                   alt="Louis Ferguson" class="avatar active"
+                   data-quote="The environment created by the Nursing Care team was one of healing and positivity. Their holistic approach made a significant difference in my recovery."
+                   data-author="Louis Ferguson">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
+                   alt="Angela Perez" class="avatar"
+                   data-quote="Knowledgeable nurses who treat every patient with dignity. I wouldn't trust anyone else with my father's care."
+                   data-author="Angela Perez">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
+                   alt="Michael Bennett" class="avatar"
+                   data-quote="Compassion and expertise in every visit. They've truly made a real difference in my daily life and recovery."
+                   data-author="Michael Bennett">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="stat-block">
+          <h3>300</h3>
+          <p>Patients served</p>
+        </div>
+        <div class="stat-block">
+          <h3>30</h3>
+          <p>Caregivers</p>
+        </div>
+        <div class="stat-block">
+          <h3>10</h3>
+          <p>Services offered</p>
+        </div>
+        <div class="stat-block">
+          <h3>95%</h3>
+          <p>Client satisfaction</p>
+        </div>
+      </section>
+<section class="appointment-section" id="appointment">
+        <div class="appt-mask-tl"></div>
+        <div class="appt-mask-br"></div>
+
+        <div class="appointment-grid">
+          
+          <div class="appointment-card">
+            <h2 class="card-title">Book appointment</h2>
+            
+            <form action="#" method="POST" class="appointment-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full name</label>
+                  <input type="text" id="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact number</label>
+                  <input type="tel" id="contactNumber" placeholder="Phone number" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Choose service</label>
+                  <select id="service" required>
+                    <option value="" disabled selected>Select services</option>
+                    <option value="medication">Medication management</option>
+                    <option value="skilled">Skilled nursing care</option>
+                    <option value="chronic">Chronic disease management</option>
+                    <option value="rehab">Rehabilitation support</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input type="text" id="location" placeholder="Enter location" required>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Additional Information"></textarea>
+              </div>
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="privacy" required>
+                <label for="privacy">By submitting this form, you agree to our friendly <a href="#">privacy policy</a>.</label>
+              </div>
+
+              <button type="submit" class="btn btn-green-small">Submit</button>
+            </form>
+          </div>
+
+          <div class="how-we-work-content">
+            <h2 class="work-title">How we <span class="text-primary-light">work</span></h2>
+            
+            <div class="work-steps">
+              <div class="work-step active">
+                <h3>Consultation</h3>
+                <p class="work-step-desc">Schedule a consultation with our team to discuss your healthcare needs and preferences. We'll gather information about your medical history, current condition, and goals.</p>
+              </div>
+              <div class="work-step">
+                <h3>Care Implementation</h3>
+                <p class="work-step-desc">Ensuring the availability of necessary resources, such as medical equipment, medications, and support services.</p>
+              </div>
+              <div class="work-step">
+                <h3>Customized care plan</h3>
+                <p class="work-step-desc">A customized care plan is a tailored strategy designed to meet the unique needs and preferences of each patient, ensuring personalized and effective healthcare.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="blog-section" id="blog">
+        <div class="blog-header">
+          <h2 class="section-title">Explore our <span class="text-primary">blog</span></h2>
+        </div>
+
+        <div class="blog-list">
+          <a href="#" class="blog-entry">
+            <div class="blog-entry-main">
+              <h3 class="blog-entry-title">The importance of home nursing care</h3>
+              <p class="blog-entry-author">Amanda Reed, RN</p>
+            </div>
+            <div class="blog-entry-meta">
+              <span class="blog-entry-date">January 24, 2024</span>
+              <span class="blog-entry-arrow" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="#" class="blog-entry">
+            <div class="blog-entry-main">
+              <h3 class="blog-entry-title">Healthy aging: lifestyle tips for seniors</h3>
+              <p class="blog-entry-author">Billy Vasquez, NP</p>
+            </div>
+            <div class="blog-entry-meta">
+              <span class="blog-entry-date">January 24, 2024</span>
+              <span class="blog-entry-arrow" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="#" class="blog-entry">
+            <div class="blog-entry-main">
+              <h3 class="blog-entry-title">Tips for managing medications at home</h3>
+              <p class="blog-entry-author">David Miller, LPN</p>
+            </div>
+            <div class="blog-entry-meta">
+              <span class="blog-entry-date">January 24, 2024</span>
+              <span class="blog-entry-arrow" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+
+        <div class="footer-newsletter">
+          <div class="footer-mask-br"></div>
+
+          <a href="index.html" class="brand-logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">Nursing Care</span>
+          </a>
+
+          <div class="newsletter-block">
+            <h3 class="newsletter-title">Stay updated with our newsletter</h3>
+            <form class="newsletter-form" action="#" method="post">
+              <input type="email" placeholder="Enter your email address" required>
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="X">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.76 3.76 0 0 1 3.38-1.86c3.61 0 4.28 2.38 4.28 5.47v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links-panel">
+          <div class="footer-mask-tr"></div>
+
+          <div class="footer-links-grid">
+            <div class="footer-col">
+              <h4 class="footer-col-title">Pages</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4 class="footer-col-title">Quick Links</h4>
+              <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#appointment">Book appointment</a></li>
+                <li><a href="#why-choose">Why choose us</a></li>
+                <li><a href="#services">Our services</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col footer-col-contact">
+              <h4 class="footer-col-title">Contact information</h4>
+              <div class="contact-item">
+                <span class="contact-label">Address</span>
+                <p>9923 51 Avenue, Edmonton</p>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:hello@nursingcare.ca">hello@nursingcare.ca</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copy">
+            <p>&copy; 2026 Nursing Care. All rights reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
