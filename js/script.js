@@ -1,20 +1,21 @@
-/* KindNurse Care@Home — Main Script */
-
 document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+  // Trigger Hero Animation on load
+  const heroContent = document.querySelector('.animate-on-load');
+  if (heroContent) {
+    // Slight delay for a smoother effect
+    setTimeout(() => {
+      heroContent.classList.add('visible');
+    }, 150);
+  }
 
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("open");
-        });
-    }
-
-    const contactForm = document.querySelector(".contact-form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            // Form submission handler — wire up endpoint later
-        });
-    }
+  // Optional: Simple Mobile Menu Toggle Logic
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  
+  if(menuToggle && mainNav) {
+    menuToggle.addEventListener('click', () => {
+      // In a full build, you'd toggle a specific class to slide down the menu
+      alert("Mobile menu clicked! We can build the expanded mobile menu styles if needed.");
+    });
+  }
 });
