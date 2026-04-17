@@ -108,25 +108,31 @@
           </div>
 
           <div class="contact-form-panel reveal reveal-right">
+            <div class="contact-form-header">
+              <span class="contact-form-tag">Get in touch</span>
+              <h2 class="contact-form-title">Send us a <span class="text-primary">message</span></h2>
+              <p class="contact-form-desc">Fill out the form and one of our care coordinators will reach out within 24 hours to discuss your needs and next steps.</p>
+            </div>
+
             <form class="contact-form" action="#" method="post">
               <div class="contact-form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
               </div>
 
               <div class="contact-form-group">
                 <label for="phone">Phone no</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____" required>
               </div>
 
               <div class="contact-form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
               </div>
 
               <div class="contact-form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us a bit about the care you're looking for…" required></textarea>
               </div>
 
               <button type="submit" class="btn-contact-submit">Submit</button>
